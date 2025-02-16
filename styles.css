@@ -1,0 +1,137 @@
+:root {
+    
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --reason-bc: hsl(179, 61%, 47%);
+    --small-txt: hsl(204, 43%, 93%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Gray);
+
+    font-family: sans-serif;
+}
+
+.container {
+    width: 340px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.top-div,
+.sign-up,
+.reason {
+    padding: 1.5rem 1.5rem 1.7rem;
+}
+
+
+.top-div {
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+.join {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--Cyan);
+}
+.day-30 {
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+    margin: 1.2rem 0;
+}
+.gain-text {
+    color: var(--Grayish-Blue);
+    line-height: 1.7;
+    font-size: .95rem;
+    font-weight: 400;
+}
+
+.full-access,
+.tutorials,
+.price span {
+    color: var(--small-txt);
+}
+
+.sign-up {
+    background-color: var(--Cyan);
+    color: #fff;
+}
+.monthly,
+.why {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.2rem 0 1rem;
+    display: flex;
+    align-items: center;
+}
+.price span {
+    font-size: .8rem;
+    font-weight: 400;
+    margin-left: .5rem;
+}
+button {
+    width: 100%;
+    padding: .7rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: sans-serif;
+    background-color: var(--Bright-Yellow);
+    border: none;
+    border-radius: 5px;
+    margin: 1.5rem 0 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+
+.reason {
+    background-color: var(--reason-bc);
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 0 0 5px 5px;
+}
+.tutorials {
+    margin-top: 1.2rem;
+    line-height: 1.3;
+}
+
+@media screen and ( min-width: 720px) {
+    .container {
+        width: 580px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .flex-div {
+        display: flex;
+    }
+    .sign-up,
+    .reason {
+        width: 50%;
+    }
+    .sign-up {
+        border-radius: 0 0 0 5px;
+    }
+    .reason {
+        border-radius: 0 0 5px 0;
+    }
+}
